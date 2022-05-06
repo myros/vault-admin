@@ -1,6 +1,19 @@
 #!/usr/bin/env bash
 # Script uses CLI: `jq` & `curl`.
 
+#
+# Script Name: migrate-secrets.sh
+#
+# Author: Miroslav
+# Date : 2022/05/05
+#
+# Description: Script helps you migrate or copy Vault secrets 
+#
+# Run Information: Using .env file, update your data and start script "bash migrate-secrets.sh"
+#
+# Error Log: Any errors or output associated with the script can be found in /logs
+#
+
 ticker () {
   echo "$(date +%Y_%m_%d_%H%M%S)"
 }

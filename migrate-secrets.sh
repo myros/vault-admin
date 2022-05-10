@@ -41,7 +41,7 @@ fi
 
 # check VAULT_TOKEN
 if [[ -z "${V1_TOKEN}" ]]; then
-  read -rp "V1_TOKEN value not found. Please enter: " -s V1_TOKEN
+  read -rsp "V1_TOKEN value not found. Please enter: " V1_TOKEN
   echo
 fi
 
@@ -62,7 +62,7 @@ fi
 
 # DESTINATION check VAULT_TOKEN
 if [[ -z "${V2_TOKEN}" ]]; then
-  read -rp "Destination V2_TOKEN value not found. Please enter: " -s V2_TOKEN
+  read -rsp "Destination V2_TOKEN value not found. Please enter: " V2_TOKEN
   echo
 fi
 

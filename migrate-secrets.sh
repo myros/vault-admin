@@ -36,44 +36,44 @@ echo "Start $(ticker)" >> ./logs/log.txt
 # =========================================
 # check V1_ADDR
 if [[ -z "${V1_ADDR}" ]]; then
-  read -pr "V1_ADDR value not found. Please enter: " V1_ADDR
+  read -rp "V1_ADDR value not found. Please enter: " V1_ADDR
 fi
 
 # check VAULT_TOKEN
 if [[ -z "${V1_TOKEN}" ]]; then
-  read -pr "V1_TOKEN value not found. Please enter: " -s V1_TOKEN
+  read -rp "V1_TOKEN value not found. Please enter: " -s V1_TOKEN
   echo
 fi
 
 # check VAULT_NAMESPACE
 if [[ -z "${V1_NAMESPACE}" ]]; then
-  read -pr "V1_NAMESPACE value not found. Please enter: " V1_NAMESPACE
+  read -rp "V1_NAMESPACE value not found. Please enter: " V1_NAMESPACE
 fi
 
 # check SOURCE ENGINE
 if [[ -z "${V1_KV}" ]]; then
-  read -pr  "V1_KV value not found. Please enter (with trailing slash): " V1_KV
+  read -rp  "V1_KV value not found. Please enter (with trailing slash): " V1_KV
 fi
 
 # check V2_ADDR
 if [[ -z "${V2_ADDR}" ]]; then
-  read -pr "V2_ADDR value not found. Please enter: " V2_ADDR
+  read -rp "V2_ADDR value not found. Please enter: " V2_ADDR
 fi
 
 # DESTINATION check VAULT_TOKEN
 if [[ -z "${V2_TOKEN}" ]]; then
-  read -pr "Destination V2_TOKEN value not found. Please enter: " -s V2_TOKEN
+  read -rp "Destination V2_TOKEN value not found. Please enter: " -s V2_TOKEN
   echo
 fi
 
 # check VAULT_NAMESPACE
 if [[ -z "${V2_NAMESPACE}" ]]; then
-  read -pr "V2_NAMESPACE value not found. Please enter: " V2_NAMESPACE
+  read -rp "V2_NAMESPACE value not found. Please enter: " V2_NAMESPACE
 fi
 
 # check DESTINATION PATH
 if [[ -z "${V2_KV}" ]]; then
-  read -pr "V2_KV value not found. Please enter (with trailing slash): " -s V2_KV
+  read -rp "V2_KV value not found. Please enter (with trailing slash): " -s V2_KV
 fi
 
 # VERIFY ENV DATA
